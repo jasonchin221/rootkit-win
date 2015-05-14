@@ -1,0 +1,17 @@
+TARGETNAME=HelloUtil   # your program name (it'll compile to "hello.exe")
+TARGETTYPE=PROGRAM # PROGRAM means that it will be a normal executable program
+TARGETPATH=OBJ
+
+# other common choices for TARGETTYPE are: DYNLINK, LIBRARY, DRIVER
+UMTYPE=console     # usermode target type CONSOLE. this is a 32bit user-mode console app
+
+# the other common choice for UMTYPE is: WINDOWS (gui app)
+UMENTRY=main       # default entry point shoudl be "main"
+
+USE_MSVCRT=1        # use the multithreaded runtime library
+
+INCLUDES=$(BASEDIR)\inc;\
+         $(BASEDIR)\inc\ddk;\
+ 	 ..\include;\
+ 	 
+SOURCES=util.cpp     # the name of the source file

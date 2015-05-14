@@ -1,0 +1,6 @@
+*.log
+objchk_win7_amd64
+objchk_win7_amd64
+/*.err
+/util/*.asm
+/util/*.bak
